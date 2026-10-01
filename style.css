@@ -596,3 +596,46 @@ button,.btn{font-family:var(--font-body);font-weight:800}
 }
 
 
+/* ===== STORY PHOTO: MOBILE FIX ===== */
+@media (max-width:640px){
+  .story__photo{max-width:320px;margin:0 auto 8px}
+  .story__frame{aspect-ratio:4/5;border-radius:24px}
+  .story__frame img{object-fit:cover;object-position:center top}
+
+  .story__stat{right:-6px;bottom:14px;left:auto;max-width:170px;
+    padding:10px 14px;border-radius:14px;
+    box-shadow:0 14px 30px -12px rgba(0,0,0,.55)}
+  .story__stat b{font-size:26px;line-height:1}
+  .story__stat small{display:block;font-size:11px;line-height:1.3;margin-top:3px}
+}
+
+
+
+/* ===== HERO BADGE (simple) ===== */
+.hero__badge{display:inline-flex!important;align-items:center;gap:10px;
+  padding:5px 16px 5px 5px;border-radius:99px;max-width:100%;
+  background:var(--glass-bg);border:1px solid var(--glass-border);backdrop-filter:blur(8px);
+  animation:hbGlow 3s ease-in-out infinite}
+.hb__num{flex-shrink:0;padding:6px 12px;border-radius:99px;
+  background:var(--accent-lime);color:var(--dark-green);font-weight:800;font-size:13px;line-height:1}
+.hb__num b{color:var(--dark-green)!important}
+.hb__txt{font-size:13.5px;font-weight:500;color:var(--text-light);line-height:1.3;text-align:left}
+@keyframes hbGlow{50%{border-color:rgba(208,255,51,.45);box-shadow:0 0 18px -6px var(--accent-lime)}}
+
+@media (max-width:480px){
+  .hb__num{font-size:12px;padding:6px 10px}
+  .hb__txt{font-size:12.5px}
+}
+
+
+
+.ht__small,
+.ht__big{
+  display:block;
+  font-size:inherit;
+  color:#fff;
+  line-height:1.05;
+}
+.ht__big{
+  margin-top:.25em;
+}
